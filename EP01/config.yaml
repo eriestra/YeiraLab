@@ -1,0 +1,12 @@
+---
+title: Contenido
+description: Contenido para el sitio EscuelaEnCasa
+id: Rise360-Benchmark-Demo-01
+highlight: '#8642b2'
+defaults:
+  pagination: true
+  swipe: false
+  next: "Next"
+  canReview: true
+
+
