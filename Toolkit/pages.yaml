@@ -1,0 +1,8 @@
+# Bloom Example
+
+- page:
+  - category: Bloom Editor
+  - id: Bloom Editor Test
+  - content:
+    - box is-shadowless:
+      - text: Hello World
