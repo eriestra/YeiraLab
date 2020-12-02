@@ -6,8 +6,6 @@ You will be able to use the Bloom Toolkit in a localhost, however, on a live / p
 
 If you need help with setting up your account, do not hesitate contacting us at soporte@yeira.training.
 
-You can also follow our live coding events in our Youtube Channel here: https://www.youtube.com/channel/UCFTnjkdU-uSuqq1PE5MaUDg
-
 ## How to start
 
 1. Download this source and setup favorite text editor (Code, Atom, Sublime, etc.)
@@ -23,6 +21,16 @@ You can also follow our live coding events in our Youtube Channel here: https://
 5. Run: 
 
       `browser-sync start --server --files *.yaml`
+
+## How do I get more help?
+
+You can follow our live coding events / recordings in our Youtube Channel here: https://www.youtube.com/channel/UCFTnjkdU-uSuqq1PE5MaUDg
+
+In addition to that it will help you understand two key technology components of the Bloom toolkit:
+
+- Bulma CSS Framework. All of our styling model is based on Bulma, any available classes in Bulma are available in Bloom. Find out more here: https://bulma.io/
+- YAML. All of our code is based on human readable YAML, you can learn more here: https://yaml.org/
+
 
 
 Happy eLearning!
