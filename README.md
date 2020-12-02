@@ -14,13 +14,16 @@ If you need help with setting up your account, do not hesitate contacting us at 
 
 3. Install https://browsersync.io/ with
 
-      `npm install -g browser-sync`
+`npm install -g browser-sync`
 
 4. Select the folder on which you want to work (contains an index.html file and a pages.yaml file)
 
 5. Run: 
 
-      `browser-sync start --server --files *.yaml`
+`browser-sync start --server --files *.yaml`
+
+In this way you will be able to change your pages.yaml file and see the outcome immediately upon saving.
+
 
 ## How do I get more help?
 
