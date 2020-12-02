@@ -16,13 +16,13 @@ You can also follow our live coding events in our Youtube Channel here: https://
 
 3. Install https://browsersync.io/ with
 
-`npm install -g browser-sync`
+      `npm install -g browser-sync`
 
 4. Select the folder on which you want to work (contains an index.html file and a pages.yaml file)
 
 5. Run: 
 
-`browser-sync start --server --files *.yaml`
+      `browser-sync start --server --files *.yaml`
 
 
 Happy eLearning!
