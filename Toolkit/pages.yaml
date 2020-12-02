@@ -1,8 +1,8 @@
 # Bloom Example
 
 - page:
-  - category: Bloom Editor
-  - id: Bloom Editor Test
+  - category: YeiraLab 
+  - id: YeiraLab
   - content:
     - box is-shadowless:
-      - text: Hello World
+      - text: Hello World!
