@@ -5,8 +5,4 @@
   - id: YeiraLab
   - content:
     - box:
-      - title: This is my nice Title
-      - subtitle: And here is a subtitle!
-      - text: We are doing a change on our source.
-      style: "text-align: right;"
-    - Editor:
+      - text: Hola mundo!
