@@ -1,0 +1,11 @@
+# Bloom Example
+
+- page:
+  - category: YeiraLab 
+  - id: YeiraLab
+  - content:
+    - box:
+      - title: My title
+      - subtitle: My subtitle
+      - text: Hello World!
+        style: "text-align: right;"
