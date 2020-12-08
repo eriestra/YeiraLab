@@ -1,11 +1,186 @@
 # Bloom Example
 
+# Forcemipsum
+
+# Yes. Our scout ships have reached Dantooine. They found the remains of a Rebel base, but they estimate that it has been deserted for some time. They are now conducting an extensive search of the surrounding systems. She lied! She lied to us! I told you she would never consciously betray the Rebellion. Terminate her...immediately!
+
 - page:
   - category: YeiraLab 
   - id: YeiraLab
-  - content:
-    - box:
-      - title: My title
-      - subtitle: My subtitle
-      - text: Hello World!
-        style: "text-align: right;"
+
+# Normal text in a block
+  - block:
+    - text: Hello World!
+
+# Title and subtitles
+  - block has-background-danger-light:
+    - title: Hello World!
+    - subtitle: Hello World!
+
+# Text transformation
+  - block has-background-info-light p-4:
+    - title is-4 is-capitalized: Hello World!
+    - title is-4 is-lowercase: Hello World!
+    - title is-4 is-uppercase: Hello World!
+    - title is-4 is-family-code: Hello World!
+
+# Title and subtitles
+# In Bulma the html do not matter
+# Only the classes
+  - block:
+    - title is-1: Hello World!
+    - title is-2: Hello World!
+    - title is-3: Hello World!
+    - title is-4: Hello World!
+    - title is-5: Hello World!
+    - title is-6: Hello World!
+
+  - block has-text-left:
+    - content is-small: She lied! She lied to us! I told you she would never consciously betray the Rebellion. Terminate her...immediately!
+    - content is-medium: She lied! She lied to us! I told you she would never consciously betray the Rebellion. Terminate her...immediately!
+    - content is-large: She lied! She lied to us! I told you she would never consciously betray the Rebellion. Terminate her...immediately!
+
+# Boxes
+
+  - block has-text-left:
+    - box: 
+      - title: Hello World!
+      - content: Yes. Our scout ships have reached Dantooine. They found the remains of a Rebel base, but they estimate that it has been deserted for some time.
+
+# Notifications
+  - block has-text-left:
+    - notification is-primary: Yes. Our scout ships have reached Dantooine. They found the remains of a Rebel base, but they estimate that it has been deserted for some time.
+    - notification is-info: Yes. Our scout ships have reached Dantooine. They found the remains of a Rebel base, but they estimate that it has been deserted for some time.
+    - notification is-success: Yes. Our scout ships have reached Dantooine. They found the remains of a Rebel base, but they estimate that it has been deserted for some time.
+    - notification is-warning: Yes. Our scout ships have reached Dantooine. They found the remains of a Rebel base, but they estimate that it has been deserted for some time.
+    - notification is-danger: Yes. Our scout ships have reached Dantooine. They found the remains of a Rebel base, but they estimate that it has been deserted for some time.
+
+# Tags
+  - block:
+    - tag: Hello 
+    - tag is-black: Black
+    - tag is-dark: Dark
+    - tag is-light: Light
+    - tag is-white: White
+    - tag is-primary: Primary
+    - tag is-info: Info
+    - tag is-success: Success
+    - tag is-warning: Warning
+    - tag is-danger: Danger
+    
+#  Messages
+  - block has-text-left:
+    - message:
+      - message-header: Our scout ships have reached Dantooine.
+      - message-body: Yes. Our scout ships have reached Dantooine. They found the remains of a Rebel base, but they estimate that it has been deserted for some time.
+    - message is-info:
+      - message-header: Our scout ships have reached Dantooine.
+      - message-body: Yes. Our scout ships have reached Dantooine. They found the remains of a Rebel base, but they estimate that it has been deserted for some time.
+    - message is-danger:
+      - message-header: Our scout ships have reached Dantooine.
+      - message-body: Yes. Our scout ships have reached Dantooine. They found the remains of a Rebel base, but they estimate that it has been deserted for some time.
+
+# Hero box
+  - block has-text-left:
+    - hero: 
+      - hero-body: 
+        - container: 
+          - title: Hero Title
+          - subtitle: Hero Subtitle
+    - hero is-success: 
+      - hero-body: 
+        - container: 
+          - title: Hero Title
+          - subtitle: Hero Subtitle
+    - hero is-info is-fullheight: 
+      - hero-body: 
+        - container: 
+          - title: Hero Title
+          - subtitle: Hero Subtitle
+
+# Cards
+
+  - block:
+    - card has-background-danger :
+      - card-content: 
+        - title is-4 has-text-white: They found the remains of a Rebel base, but they estimate that it has been deserted for some time.
+      - card-footer:
+        - card-footer-item:
+          - subtitle has-text-white: Item
+        - card-footer-item:
+          - subtitle has-text-white: Item
+
+# Tables
+
+  - block: 
+    - Table:
+        header:
+        - row: [Column 1, Column 2, Column 3]
+        body:
+        - row: [Item 1, Item 2, Item 3]
+        - row: [Item 1, Item 2, Item 3]
+        - row: [Item 1, Item 2, Item 3]
+        footer: 
+        - row:
+          - title is-5 has-text-danger: Column 1
+          - text: Column 2
+          - text: Column 3
+        type: is-bordered is-narrow is-hoverable is-fullwidth
+
+# Layouts:
+  - block:
+    - columns:
+      - column:
+        - notification: Column 1
+      - column:
+        - notification: Column 2
+      - column:
+        - notification: Column 3
+      - column:
+        - notification: Column 4
+
+# Layouts:
+  - block:
+    - columns:
+      - column is-2:
+        - notification: Column 1
+      - column is-8:
+        - notification: Column 2
+      - column is-2:
+        - notification: Column 3
+
+# Layouts:
+  - block:
+    - columns:
+      - column is-two-thirds:
+        - notification: Column 1
+      - column:
+        - notification: Column 2
+
+# Tiles
+
+  - block:
+    - tile is-ancestor:
+      - tile is-parent is-vertical: 
+        - tile notification is-child: Tile Top
+        - tile notification is-child: Tile Bottom
+      - tile is-parent: 
+        - tile notification is-child: Tile 2
+      - tile is-parent: 
+        - tile notification is-child:
+          # Here is a teaser for the following episodes:
+          - Question: 
+              id: E-04-Question-01
+              points: 10
+              display: grid 
+              options: 
+              - value: True
+                display: 'True'
+                credit: 1
+                feedback: 
+                - text: Yes, it is true
+              - value: False
+                display: 'False'
+                credit: 0
+                feedback: 
+                - text: No, its false
