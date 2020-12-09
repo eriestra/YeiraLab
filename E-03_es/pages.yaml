@@ -1,0 +1,129 @@
+# Bloom Example
+
+# Forcemipsum
+ 
+# Yes. Our scout ships have reached Dantooine. They found the remains of a Rebel base, but they estimate that it has been deserted for some time. They are now conducting an extensive search of the surrounding systems. She lied! She lied to us! I told you she would never consciously betray the Rebellion. Terminate her...immediately!
+
+- page:
+  - category: YeiraLab 
+  - id: YeiraLab
+
+  - block:
+    - text: ¡Hola mundo!
+
+  - block: 
+    - title: Hola Título!
+    - subtitle: Hola Subtítulo!
+
+  - block has-background-danger-light p-4: 
+    - title is-4 is-capitalized: Hola Título!
+    - title is-4 is-lowercase: Hola Título!
+    - title is-4 is-uppercase: Hola Título!
+    - title is-4 is-family-code: Hola Título!
+
+  - block:
+    - title is-1: Título 
+    - title is-2: Título 
+    - title is-3: Título 
+    - title is-4: Título 
+    - title is-5: Título 
+    - title is-6: Título 
+  
+  - block has-text-left: 
+    - content is-small: Yes. Our scout ships have reached Dantooine. They found the remains of a Rebel base, but they estimate that it has been deserted for some time.
+    - content: Yes. Our scout ships have reached Dantooine. They found the remains of a Rebel base, but they estimate that it has been deserted for some time.
+    - content is-medium: Yes. Our scout ships have reached Dantooine. They found the remains of a Rebel base, but they estimate that it has been deserted for some time.
+    - content is-large: Yes. Our scout ships have reached Dantooine. They found the remains of a Rebel base, but they estimate that it has been deserted for some time.
+
+  - block: 
+    - box: 
+      - title: Título
+      - content: Yes. Our scout ships have reached Dantooine. They found the remains of a Rebel base, but they estimate that it has been deserted for some time.
+
+  - block: 
+    - notification is-primary: Yes. Our scout ships have reached Dantooine. They found the remains of a Rebel base, but they estimate that it has been deserted for some time.
+    - notification is-success: Yes. Our scout ships have reached Dantooine. They found the remains of a Rebel base, but they estimate that it has been deserted for some time.
+    - notification is-info: Yes. Our scout ships have reached Dantooine. They found the remains of a Rebel base, but they estimate that it has been deserted for some time.
+    - notification is-warning: Yes. Our scout ships have reached Dantooine. They found the remains of a Rebel base, but they estimate that it has been deserted for some time.
+    - notification is-danger: Yes. Our scout ships have reached Dantooine. They found the remains of a Rebel base, but they estimate that it has been deserted for some time.
+
+  - block:
+    - tag mx-2: Hola!
+    - tag mx-2 is-black: Hola!
+    - tag mx-2 is-white: Hola!
+    - tag mx-2 is-info: Hola!
+    - tag mx-2: Hola!
+
+  - block: 
+    - message is-info:
+      - message-header: Título de mi mensaje.
+      - message-body: She lied! She lied to us! I told you she would never consciously betray the Rebellion. Terminate her...immediately!
+
+  - block:
+    - hero is-success is-fullheight:
+      - hero-body:
+        - container:
+          - title: Título
+          - subtitle: Subtítulo
+
+  - block: 
+    - card has-background-danger:
+      - card-content:
+        - title has-text-white: Título
+      - card-footer:
+        - card-footer-item:
+          - subtitle: Item
+        - card-footer-item:
+          - subtitle: Item
+        - card-footer-item:
+          - subtitle: Item
+
+  - block:
+    - Table:
+        header:
+        - row: [Column 1, Column 2, Column 3]
+        body:
+        - row: [Item 1, Item 2, Item 3]
+        - row: [Item 1, Item 2, Item 3]
+        - row: [Item 1, Item 2, Item 3]
+        footer:
+        - row:
+          - title is-5 has-text-danger: Column 1
+          - text: Column 2
+          - text: Column 3
+        type: is-bordered is-narrow is-hoverable is-fullwidth
+
+  - block: 
+    - columns: 
+      - column is-2:
+        - notification: Column 1
+      - column is-8: 
+        - notification: Column 2
+      - column is-2: 
+        - notification: Column 3
+
+  - block:
+    - tile is-ancestor:
+      - tile is-parent is-vertical:
+        - tile notification is-child: Tile Top
+        - tile notification is-child: Tile Bottom
+      - tile is-parent:
+        - tile notification is-child: They found the remains of a Rebel base, but they estimate that it has been deserted for some time. They are now conducting an extensive search of the surrounding systems. She lied! She lied to us! I told you she would never consciously betray the Rebellion. Terminate her...immediately!
+      - tile is-parent:
+        - tile notification is-child:
+
+          - Question:
+              id: E-03-Question-01
+              points: 10
+              display: grid
+              options:
+              - value: True
+                display: 'Cierto'
+                credit: 1
+                feedback:
+                - text: Si, es cierto
+              - value: False
+                display: 'Falso'
+                credit: 0
+                feedback:
+                - text: No, es cierto
