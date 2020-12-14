@@ -1,0 +1,200 @@
+# Bloom Example
+
+# Forcemipsum
+
+# Yes. Our scout ships have reached Dantooine. They found the remains of a Rebel base, but they estimate that it has been deserted for some time. They are now conducting an extensive search of the surrounding systems. She lied! She lied to us! I told you she would never consciously betray the Rebellion. Terminate her...immediately!
+
+- page:
+  - category: YeiraLab 
+  - id: YeiraLab
+
+# Image centered
+  - block:
+    - img: parkour.jpg
+
+# Image Fullwidth
+  - block:
+    - hero is-fullheight:
+      - hero-body:
+        - container:
+          - text: <div></div>
+      img: parkour.jpg
+
+# Two column grid
+  - block:
+    - tile is-ancestor:
+      - tile is-parent m-0:
+        - tile is-child:
+          - text:
+            style: "min-height: 200px;"
+          img: parkour.jpg
+      - tile is-parent m-0:
+        - tile is-child:
+          img: parkour.jpg
+
+# Three column grid
+  - block:
+    - tile is-ancestor:
+      - tile is-parent m-0:
+        - tile is-child:
+          - text:
+            style: "min-height: 200px;"
+          img: parkour.jpg
+      - tile is-parent m-0:
+        - tile is-child:
+          img: parkour.jpg
+      - tile is-parent m-0:
+        - tile is-child:
+          img: parkour.jpg
+
+# Four column grid
+  - block:
+    - tile is-ancestor:
+      - tile is-parent m-0:
+        - tile is-child:
+          - text:
+            style: "min-height: 200px;"
+          img: parkour.jpg
+      - tile is-parent m-0:
+        - tile is-child:
+          img: parkour.jpg
+      - tile is-parent m-0:
+        - tile is-child:
+          img: parkour.jpg
+      - tile is-parent m-0:
+        - tile is-child:
+          img: parkour.jpg
+
+# Image & Text (Intro to the art director problem)
+  - block: 
+    - card m-5 p-5:
+      - columns:
+        - column:
+            - text:
+              style: "min-height: 300px;"
+          img: parkour.jpg
+          position: center center
+        - column:
+          - text m-4 has-text-left: I find your lack of faith disturbing. I care. So, what do you think of her, Han? A tremor in the Force. The last time I felt it was in the presence of my old master. I suggest you try it again, Luke. This time, let go your conscious self and act on instinct.
+          - text m-4 has-text-left: Yes. Our scout ships have reached Dantooine. They found the remains of a Rebel base, but they estimate that it has been deserted for some time. They are now conducting an extensive search of the surrounding systems. She lied! She lied to us! I told you she would never consciously betray the Rebellion. Terminate her...immediately!
+
+# Text on Image
+  - block:
+    - hero has-text-left:
+      - hero-body:
+        - hero-container:
+          - columns:
+            - column is-1: '<div style="background-color: #FFFFFF; height: 5px;">'
+          - title has-text-white is-size-4: There. You see Lord Vader, she can be reasonable. Continue with the operation. You may fire when ready. What? You’re far too trusting. Dantooine is too remote to make an effective demonstration. But don’t worry. We will deal with your Rebel friends soon enough. No! Commence primary ignition.
+          - subtitle has-text-white is-size-5: <i>General Tarkin</i>
+      img: parkour.jpg
+      position: bottom
+
+# Basic Quote
+
+  - block:
+    - card m-5 p-5:
+      - text: <hr>
+      - columns is-centered:
+        - column is-3:
+          - img: GT.jpg
+        - column is-6:
+          - text: <i>There. You see Lord Vader, she can be reasonable. Continue with the operation. You may fire when ready. What? You’re far too trusting. Dantooine is too remote to make an effective demonstration. But don’t worry. We will deal with your Rebel friends soon enough. No! Commence primary ignition.</i>
+      - text: <hr>
+
+# Rounded image Quote
+
+  - block:
+    - card m-5 p-5:
+      - columns is-centered:
+        - column is-6:
+          - text: |
+              <figure class="image is-128x128">
+                <img class="is-rounded" src="./assets/GT.jpg">
+              </figure>
+            class: columns is-flex is-centered
+          - text: <hr>
+          - text: <i>There. You see Lord Vader, she can be reasonable. Continue with the operation. You may fire when ready. What? You’re far too trusting. Dantooine is too remote to make an effective demonstration. But don’t worry. We will deal with your Rebel friends soon enough. No! Commence primary ignition.</i>
+          - text: <hr>
+
+# Background image and the Art Director problem (top, center and bottom)
+  - block:
+    - hero has-text-left:
+      - hero-body:
+        - hero-container:
+          - text: |
+              <figure class="image is-64x64">
+                <img class="is-rounded" src="./assets/GT.jpg">
+              </figure>
+            class: columns is-flex
+          - title has-text-white is-4: There. You see Lord Vader, she can be reasonable. Continue with the operation. You may fire when ready. What? You’re far too trusting. Dantooine is too remote to make an effective demonstration. But don’t worry. We will deal with your Rebel friends soon enough. No! Commence primary ignition.
+          - subtitle has-text-white is-size-5: <i>General Tarkin</i>
+      img: DeathStar.png
+      position: bottom
+
+# Audio
+  - block:
+    - card m-5 p-5:
+      - text: |
+          <audio controls>
+            <source src="./assets/What is Data Analytics.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio> 
+
+# Video
+  - block:
+    - card m-5 p-5:
+      - video: https://www.youtube.com/embed/wEziMRhIEpo?modestbranding=1
+
+# Embed
+  - block:
+    - card m-5 p-5:
+      - text: |
+          <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://prezi.com/embed/-totikp5e10m/' id='iframe_container' frameborder='0' webkitallowfullscreen='' mozallowfullscreen='' allowfullscreen='' allow='autoplay; fullscreen' height='315' width='560'></iframe></div>
+
+# Downloadable content
+  - block is-small:
+    - card m-5 p-5:
+      - subtitle: Descarga el siguiente archivo.
+      - File:
+          text: Descargar 
+          icon: file download 1
+          src: yoda.pdf
+
+# Image options and Video Feedback
+  - block:
+    - card m-5 p-5:
+      - text: This example shows additional media and feedback components...
+      - text: Which one of these items is used for gardening?
+      - Question:  
+          id: E-04-Question-02
+          random: True
+          points: 10
+          options: 
+          - value: Multitool
+            display: 
+            - img: Multitool.png
+            credit: 0
+            feedback: 
+              - text: <b>No,</b> this is a multi-purpose tool. Lets see some more!
+              - columns is-centered:
+                - column is-4 mt-4:
+                  - video: https://www.youtube.com/embed/Cxou6yLfTaI
+          - value: Saw
+            display: 
+            - img: Saw.png
+            credit: 0.5
+            feedback: 
+              - text: <b>Mmm, </b> are you cutting down trees in your garden. Will give you half credit. Let's see how you would do that!
+              - columns is-centered:
+                - column is-4 mt-4:
+                  - video: https://www.youtube.com/embed/RtfZ__Q5EzI
+          - value: Shovel
+            display: 
+            - img: Shovel.png
+            credit: 1
+            feedback: 
+              - text: <b>Yes.</b> A shovel is typically used in the garden. Would you like to see more?
+              - columns is-centered:
+                - column is-4 mt-4:
+                  - video: https://www.youtube.com/embed/NmMN339AbUY
