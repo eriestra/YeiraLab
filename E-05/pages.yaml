@@ -1,0 +1,162 @@
+# Bloom Example
+
+- page:
+  - category: YeiraLab 
+  - id: YeiraLab
+  - content:
+    - text: Page 1
+  - block:
+    - card m-5 p-5:
+      - Collapse:
+          header: 
+            - text: Concept 1
+          content: 
+            - text has-text-left: This is my content to be displayed.
+      - Collapse:
+          header: 
+            - text: Concept 2
+          content: 
+            - text has-text-left: This is my content to be displayed.
+      - Collapse:
+          header: 
+            - text: Concept 3
+          content: 
+            - text has-text-left: This is my content to be displayed.
+
+- page:
+  - category: YeiraLab 
+  - id: YeiraLab
+  - content:
+    - text: Page 2
+  - block:
+    - card m-5 p-5:
+      - Modal: 
+          header: 
+            - text: Open Modal 1
+          content: 
+            - message has-text-left:
+              - message-header:
+                - text: 'Have a look at this:'
+              - message-body: 
+                - text: Test message body
+      - Modal: 
+          header: 
+            - text: Open Modal 2
+          content: 
+            - message has-text-left:
+              - message-header:
+                - text: 'Have a look at this:'
+              - message-body: 
+                - Question: 
+                    id: EP05-ID-02
+                    random: True
+                    points: 10
+                    options:
+                    - value: Multitool
+                      display:
+                      - img: Multitool.png
+                      credit: 0
+                      feedback:
+                        - text: <b>No,</b> this is a multi-purpose tool. Lets see some more!
+                        - columns is-centered:
+                          - column is-4 mt-4:
+                            - video: https://www.youtube.com/embed/Cxou6yLfTaI
+                    - value: Saw
+                      display:
+                      - img: Saw.png
+                      credit: 0.5
+                      feedback:
+                        - text: <b>Mmm, </b> are you cutting down trees in your garden. Will give you half credit. Let's see how you would do that!
+                        - columns is-centered:
+                          - column is-4 mt-4:
+                            - video: https://www.youtube.com/embed/RtfZ__Q5EzI
+                    - value: Shovel
+                      display:
+                      - img: Shovel.png
+                      credit: 1
+                      feedback:
+                        - text: <b>Yes.</b> A shovel is typically used in the garden. Would you like to see more?
+                        - columns is-centered:
+                          - column is-4 mt-4:
+                            - video: https://www.youtube.com/embed/NmMN339AbUY
+
+- page:
+  - category: YeiraLab 
+  - id: YeiraLab
+  - content:
+    - text: Page 3
+  - block:
+    - card m-5 p-5:
+      - SlideShow:
+        - Slide 1
+        - title: Slide 2
+        - block:
+          - text m-4: I find your lack of faith disturbing. I care. So, what do you think of her, Han? A tremor in the Force. The last time I felt it was in the presence of my old master. I suggest you try it again, Luke. This time, let go of your conscious self and act on instinct.
+
+
+- page:
+  - category: YeiraLab 
+  - id: YeiraLab
+  - content:
+    - text: Page 4
+  - block:
+    - card m-5 p-5:
+      - Steps:
+        - header: Step 1
+          content: 
+            - text: This is my first step
+        - header: Step 2
+          content: 
+            - text: This is my second step
+        - header: Step 3
+          content: 
+            - text: This is my third step
+
+- page:
+  - category: YeiraLab 
+  - id: YeiraLab
+  - content:
+    - text: Page 5
+  - block:
+    - card m-5 p-5:
+      - Tabs:
+        - header: Tab 1
+          content: 
+            - text: This is my first Tab
+        - header: Tab 2
+          content: 
+            - text: This is my second Tab
+        - header: Tab 3
+          content: 
+            - Question: 
+                id: EP05-ID-01
+                random: True
+                points: 10
+                options:
+                - value: Multitool
+                  display:
+                  - img: Multitool.png
+                  credit: 0
+                  feedback:
+                    - text: <b>No,</b> this is a multi-purpose tool. Lets see some more!
+                    - columns is-centered:
+                      - column is-4 mt-4:
+                        - video: https://www.youtube.com/embed/Cxou6yLfTaI
+                - value: Saw
+                  display:
+                  - img: Saw.png
+                  credit: 0.5
+                  feedback:
+                    - text: <b>Mmm, </b> are you cutting down trees in your garden. Will give you half credit. Let's see how you would do that!
+                    - columns is-centered:
+                      - column is-4 mt-4:
+                        - video: https://www.youtube.com/embed/RtfZ__Q5EzI
+                - value: Shovel
+                  display:
+                  - img: Shovel.png
+                  credit: 1
+                  feedback:
+                    - text: <b>Yes.</b> A shovel is typically used in the garden. Would you like to see more?
+                    - columns is-centered:
+                      - column is-4 mt-4:
+                        - video: https://www.youtube.com/embed/NmMN339AbUY
