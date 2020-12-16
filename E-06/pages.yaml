@@ -1,0 +1,186 @@
+# Bloom Example
+
+- page:
+  - category: YeiraLab 
+  - id: Scenario-01
+  - content card p-5:
+    - title: Dealing with an Angry Customer
+    - subtitle: When dealing with an angry customer, what is your preferred strategy?
+    - button m-2: A - Customer Recovery
+    - button m-2: B - Prioritization
+
+- page:
+  - category: YeiraLab 
+  - id: Scenario-02
+  - content card p-5:
+    - title: Customer Recovery
+    - subtitle: The customer wants to cancel a subscription to your online services. What could be a good strategy for customer recovery?
+    - button m-2: Offer him a discount
+    - button m-2: Ask for a call to understand his/her complaint
+    - button m-2: Send a poll to collect statistical information
+
+- page:
+  - category: YeiraLab 
+  - id: Scenario-03
+  - content has-text-left card p-5:
+    - columns:
+      - column:
+        - text:
+          style: "min-height: 300px;"
+        img: discounts.jpg
+        position: right bottom
+      - column:
+        - title has-text-centered: Discounts
+        - subtitle: Discounts and refunds are seen as a last resort for customer recovery. In general discounts should not be offered if there is no standardized model to scale to other customer / complaints. 
+        - subtitle: Never offer a discount without first checking with the technical e-commerce team for availability. Polls are best suited to start a conversation leading to customer recovery.
+        - subtitle: Do you want to go ahead and see what kind of poll questions could be best? 
+        - columns is-centered:
+          - column is-3: 
+            - button p-5 m-2 has-text-centered: Go ahead
+          - column is-3: 
+            - button p-5 m-2 has-text-centered: Start over
+
+- page:
+  - category: YeiraLab 
+  - id: Scenario-04
+  - content has-text-left card p-5:
+    - columns:
+      - column:
+        - title has-text-centered: Polls
+        - subtitle: Sending a poll can be sometimes an ineffective way to dealing with complaints, however, it can be a great way in case the volume of complaints is high and you want to understand the overall impact of them in the business.
+        - subtitle: Do you want to go ahead and see what kind of poll questions could be best? 
+        - columns is-centered:
+          - column is-3: 
+            - button p-5 m-2 has-text-centered: Go ahead
+          - column is-3: 
+            - button p-5 m-2 has-text-centered: Start over
+      - column:
+        - text:
+          style: "min-height: 300px;"
+        img: polls.jpg
+        position: right bottom
+
+- page:
+  - category: YeiraLab 
+  - id: Scenario-05
+  - content has-text-left card p-5:
+    - columns:
+      - column:
+        - text:
+          style: "min-height: 300px;"
+        img: call.jpg
+        position: right top
+      - column:
+        - title has-text-centered: Calls
+        - subtitle: If you don’t receive hundreds of complains about your product that make sense to analyze statistically, it could be the best to setup a call, and get into your customer shoes. 
+        - subtitle: You might find sometimes that what he/she looks like an insurmountable problem, might have a simpler solution. That is the basis for Customer Recovery. Polls are also a good way to start a conversation leading to customer recovery.
+        - subtitle: Do you want to go ahead and see what kind of poll questions could be best? 
+        - columns is-centered:
+          - column is-3: 
+            - button p-5 m-2 has-text-centered: Go ahead
+          - column is-3: 
+            - button p-5 m-2 has-text-centered: Start over
+
+- page:
+  - category: YeiraLab 
+  - id: Scenario-06
+  - content card p-5:
+    - title has-text-centered: Prioritization
+    - subtitle: Sometimes it is hard to address all customer complaints. In that case, what is the top criterion for prioritization, before going into customer recovery strategies?
+
+    - Question: 
+        id: Scenario-06-Q1
+        random: True
+        display: grid
+        options:
+        - value: Estimate future revenues from that customer
+          display:
+          - text: Estimate future revenues from that customer
+          credit: 0
+          feedback:
+            - text: Future revenues for a customer are an incomplete way to prioritize customer complaints, because it lacks the perspective of the cost that retaining that customer has, especially if he or she tends to demand extra support.
+        - value: Estimate total cost of retaining the customer
+          display:
+          - text: Estimate total cost of retaining the customer
+          credit: 0
+          feedback:
+            - text: The cost to retain a customer is an incomplete way to prioritize customer complaints. because it misses what could be the actual benefit of retaining that customer.
+        - value: Measure cost vs benefit altogether
+          display:
+          - text: Measure cost vs benefit altogether.png
+          credit: 1
+          feedback:
+            - text: A cost vs benefit estimate is the best way to prioritize customer retention. Customers that generate high recurrent revenues combined with low cost of support should have the priority of attention, particularly more if they have complaints about our service offering.
+
+- page:
+  - category: YeiraLab 
+  - id: Scenario-07
+  - content card p-5:
+    - title has-text-centered: Cost vs Benefit
+    - subtitle: Please mark all the items that can be classified as cost of retaining a customer.
+    - Question: 
+        id: Scenario-07-Q1
+        random: True
+        display: grid
+        options:
+        - value: Technical support ticket volume of that customer specifically
+          display:
+          - text: Technical support ticket volume of that customer specifically
+          credit: 1
+          feedback:
+            - text: More ticket volume of a specific client reflects more cost, and probably a mismatch of expectations. Always consider it as a cost for retention.
+        - value: Any discounts offered to retain his/her account
+          display:
+          - text: Any discounts offered to retain his/her account
+          credit: 1
+          feedback:
+            - text: Discounts should be considered as costs of opportunity, the discount percentage times the normal price represents the specific cost of retention of a customer that was offered a discount.
+        - value: Reduced use of features of your service
+          display:
+          - text: Reduced use of features of your service
+          credit: 0
+          feedback:
+            - text: A reduced set of feature usage does not represent a cost.
+        - value: Increased use of service at a premium price
+          display:
+          - text: Increased use of service at a premium price
+          credit: 0
+          feedback:
+            - text: An increased use of a service at a premium price will not represent a cost, as long as the premium covers the additional effort to serve that client. However, an increase usage at a fix or nominal price can represent additional costs.
+
+- page:
+  - category: YeiraLab 
+  - id: Scenario-08
+  - content card p-5:
+    - title has-text-centered: Poll Questions for Customer Satisfaction
+    - subtitle: Select which of the following questions can be included in a customer satisfaction poll
+    - Question: 
+        id: Scenario-08-Q1
+        random: True
+        display: grid
+        options:
+        - value: Would you recommend our services based on your past experience?
+          display:
+          - text: Would you recommend our services based on your past experience?
+          credit: 1
+          feedback:
+            - text: Correct, this is a question that can be included
+        - value: Is there any feature that you believe could improve our service offering?
+          display:
+          - text: Is there any feature that you believe could improve our service offering?
+          credit: 1
+          feedback:
+            - text: Correct, a poll is always a great point of contact with future needs of our customers. 
+        - value: Which alternatives are you considering to replace our service offering?
+          display:
+          - text: Which alternatives are you considering to replace our service offering?
+          credit: 0
+          feedback:
+            - text: Incorrect, polls related to customer satisfactionmight not be the best way to conduct market research, as happy clients might be reluctant to provide competitive information.
+        - value: Would you accept a discount in case our platform doesn’t fulfill your expectations?
+          display:
+          - text: Would you accept a discount in case our platform doesn’t fulfill your expectations?
+          credit: 0
+          feedback:
+            - text: Incorrect, no customer satisfaction channel, including polls, should be used to open the discusion about discounts.
+
