@@ -1,0 +1,129 @@
+# Bloom Example
+
+- page:
+  - category: YeiraLab 
+  - id: YeiraLab-1
+  - content:
+    - box is-shadowless:
+      - text: Página 1
+  - block:
+    - card m-5 p-5:
+      - Collapse:
+          header:
+            - text: Encabezado 1
+          content:
+            - text has-text-left: Este es mi contenido oculto que puedo deplegar.
+      - Collapse:
+          header:
+            - text: Encabezado 2
+          content:
+            - text has-text-left: Este es mi contenido oculto que puedo deplegar.
+      - Collapse:
+          header:
+            - text: Encabezado 3
+          content:
+            - text has-text-left: Este es mi contenido oculto que puedo deplegar.
+    
+- page:
+  - category: YeiraLab 
+  - id: YeiraLab-2
+  - content:
+    - box is-shadowless:
+      - text: Página 2
+  - block:
+    - card m-5 p-5:
+      - Modal:
+          header:
+            - button: Abrir Modal
+          content:
+            - message has-text-left:
+              - message-header:
+                - text: Encabezado del mensaje
+              - message-body:
+                - text: Cuerpo del mensaje
+
+- page:
+  - category: YeiraLab 
+  - id: YeiraLab-3
+  - content:
+    - box is-shadowless:
+      - text: Página 3
+  - block:
+    - card m-5 p-5:
+      - SlideShow:
+        - Slide 1
+        - title: Slide 2
+        - block:
+          - card m-5 p-5:
+            - text m-4: I find your lack of faith disturbing. I care. So, what do you think of her, Han? A tremor in the Force. The last time I felt it was in the presence of my old master. I suggest you try it again, Luke. This time, let go of your conscious self and act on instinct.
+
+
+- page:
+  - category: YeiraLab 
+  - id: YeiraLab-4
+  - content:
+    - box is-shadowless:
+      - text: Página 4
+  - block:
+    - card m-5 p-5:
+      - Steps: 
+        - header: Paso 1
+          content: 
+            - text: Este es mi primer paso.
+        - header: Paso 2
+          content: 
+            - text: Este es mi segundo paso.
+        - header: Paso 3
+          content: 
+            - text: Este es mi tercer paso.
+
+- page:
+  - category: YeiraLab 
+  - id: YeiraLab-5
+  - content:
+    - box is-shadowless:
+      - text: Página 5
+  - block:
+    - card m-5 p-5:
+      - Tabs: 
+        - header: Pestaña 1
+          content: 
+            - text: Este es mi primer pestaña.
+        - header: Pestaña 2
+          content: 
+            - text: Este es mi segundo pestaña.
+        - header: Pestaña 3
+          content: 
+            - Question:  
+                id: E-05-Q-01
+                random: True
+                points: 10
+                options: 
+                - value: Multitool
+                  display: 
+                  - img: Multitool.png
+                  credit: 0
+                  feedback: 
+                    - text: <b>No,</b> this is a multi-purpose tool. Lets see some more!
+                    - columns is-centered:
+                      - column is-4 mt-4:
+                        - video: https://www.youtube.com/embed/Cxou6yLfTaI
+                - value: Saw
+                  display: 
+                  - img: Saw.png
+                  credit: 0.5
+                  feedback: 
+                    - text: <b>Mmm, </b> are you cutting down trees in your garden. Will give you half credit. Let's see how you would do that!
+                    - columns is-centered:
+                      - column is-4 mt-4:
+                        - video: https://www.youtube.com/embed/RtfZ__Q5EzI
+                - value: Shovel
+                  display: 
+                  - img: Shovel.png
+                  credit: 1
+                  feedback: 
+                    - text: <b>Yes.</b> A shovel is typically used in the garden. Would you like to see more?
+                    - columns is-centered:
+                      - column is-4 mt-4:
+                        - video: https://www.youtube.com/embed/NmMN339AbUY
+
