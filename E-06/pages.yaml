@@ -6,8 +6,10 @@
   - content card p-5:
     - title: Dealing with an Angry Customer
     - subtitle: When dealing with an angry customer, what is your preferred strategy?
-    - button m-2: A - Customer Recovery
-    - button m-2: B - Prioritization
+    - button m-2:
+      - text: A - Customer Recovery
+    - button m-2:
+      - text: B - Prioritization
 
 - page:
   - category: YeiraLab 
@@ -15,9 +17,12 @@
   - content card p-5:
     - title: Customer Recovery
     - subtitle: The customer wants to cancel a subscription to your online services. What could be a good strategy for customer recovery?
-    - button m-2: Offer him a discount
-    - button m-2: Ask for a call to understand his/her complaint
-    - button m-2: Send a poll to collect statistical information
+    - button m-2:
+      - text: Offer him a discount
+    - button m-2:
+      - text: Ask for a call to understand his/her complaint
+    - button m-2:
+      - text: Send a poll to collect statistical information
 
 - page:
   - category: YeiraLab 
@@ -36,9 +41,11 @@
         - subtitle: Do you want to go ahead and see what kind of poll questions could be best? 
         - columns is-centered:
           - column is-3: 
-            - button p-5 m-2 has-text-centered: Go ahead
+            - button p-5 m-2 has-text-centered:
+              - text: Go ahead
           - column is-3: 
-            - button p-5 m-2 has-text-centered: Start over
+            - button p-5 m-2 has-text-centered:
+              - text: Start over
 
 - page:
   - category: YeiraLab 
@@ -51,9 +58,11 @@
         - subtitle: Do you want to go ahead and see what kind of poll questions could be best? 
         - columns is-centered:
           - column is-3: 
-            - button p-5 m-2 has-text-centered: Go ahead
+            - button p-5 m-2 has-text-centered:
+              - text: Go ahead
           - column is-3: 
-            - button p-5 m-2 has-text-centered: Start over
+            - button p-5 m-2 has-text-centered:
+              - text: Start over
       - column:
         - text:
           style: "min-height: 300px;"
@@ -77,9 +86,11 @@
         - subtitle: Do you want to go ahead and see what kind of poll questions could be best? 
         - columns is-centered:
           - column is-3: 
-            - button p-5 m-2 has-text-centered: Go ahead
+            - button p-5 m-2 has-text-centered:
+              - text: Go ahead
           - column is-3: 
-            - button p-5 m-2 has-text-centered: Start over
+            - button p-5 m-2 has-text-centered:
+              - text: Start over
 
 - page:
   - category: YeiraLab 
