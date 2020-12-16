@@ -4,6 +4,7 @@ description: This is the main Bloom Toolkit
 id: Bloom-Toolkit
 highlight: '#EF7145'
 defaults:
+  navigation: false
   prev: "Back"
   next: "Next"
 

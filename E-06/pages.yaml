@@ -1,5 +1,34 @@
 # Bloom Example
 
+# Buttons allow for many different actions, internally and externally
+- page:
+  - category: YeiraLab 
+  - id: Scenario-00
+  - title: Examples of Buttons and actions
+  - subtitle mt-5 mb-0: These are normal navigation buttons
+  - button p-4 m-4:  
+    - text: First page
+      action: first
+  - button p-4 m-4:  
+    - text: Previous page
+      action: prev
+  - button p-4 m-4:  
+    - text: Next page
+      action: next
+  - button p-4 m-4:  
+    - text: Last page
+      action: last
+  - subtitle mt-5 mb-0: You can also link buttons or any other element to external links
+  - button p-4 m-4: 
+    - img: yeira-logo-blanco.png
+      action: https://yeira.training 
+    style: "background-color: #ef7145;"
+  - subtitle mt-5 mb-0: Finally you can also jump to a specific page by providing the ID of that page.
+  - button p-4 m-4:  
+    - text: Start with Scenario example
+      action: Scenario-01
+
+
 - page:
   - category: YeiraLab 
   - id: Scenario-01
@@ -8,8 +37,10 @@
     - subtitle: When dealing with an angry customer, what is your preferred strategy?
     - button m-2:
       - text: A - Customer Recovery
+        action: Scenario-02
     - button m-2:
       - text: B - Prioritization
+        action: Scenario-06
 
 - page:
   - category: YeiraLab 
@@ -19,10 +50,13 @@
     - subtitle: The customer wants to cancel a subscription to your online services. What could be a good strategy for customer recovery?
     - button m-2:
       - text: Offer him a discount
-    - button m-2:
-      - text: Ask for a call to understand his/her complaint
+        action: Scenario-03
     - button m-2:
       - text: Send a poll to collect statistical information
+        action: Scenario-04
+    - button m-2:
+      - text: Ask for a call to understand his/her complaint
+        action: Scenario-05
 
 - page:
   - category: YeiraLab 
@@ -38,14 +72,16 @@
         - title has-text-centered: Discounts
         - subtitle: Discounts and refunds are seen as a last resort for customer recovery. In general discounts should not be offered if there is no standardized model to scale to other customer / complaints. 
         - subtitle: Never offer a discount without first checking with the technical e-commerce team for availability. Polls are best suited to start a conversation leading to customer recovery.
-        - subtitle: Do you want to go ahead and see what kind of poll questions could be best? 
+        - subtitle: 'Ready to test your knowledge? Try one of these options:'
         - columns is-centered:
           - column is-3: 
             - button p-5 m-2 has-text-centered:
-              - text: Go ahead
+              - text: Poll questions
+                action: Scenario-08
           - column is-3: 
             - button p-5 m-2 has-text-centered:
-              - text: Start over
+              - text: Cost vs Benefit
+                action: Scenario-07
 
 - page:
   - category: YeiraLab 
@@ -59,10 +95,12 @@
         - columns is-centered:
           - column is-3: 
             - button p-5 m-2 has-text-centered:
-              - text: Go ahead
+              - text: Poll questions
+                action: Scenario-08
           - column is-3: 
             - button p-5 m-2 has-text-centered:
-              - text: Start over
+              - text: Cost vs Benefit
+                action: Scenario-07
       - column:
         - text:
           style: "min-height: 300px;"
@@ -87,10 +125,12 @@
         - columns is-centered:
           - column is-3: 
             - button p-5 m-2 has-text-centered:
-              - text: Go ahead
+              - text: Poll questions
+                action: Scenario-08
           - column is-3: 
             - button p-5 m-2 has-text-centered:
-              - text: Start over
+              - text: Cost vs Benefit
+                action: Scenario-07
 
 - page:
   - category: YeiraLab 
@@ -98,7 +138,6 @@
   - content card p-5:
     - title has-text-centered: Prioritization
     - subtitle: Sometimes it is hard to address all customer complaints. In that case, what is the top criterion for prioritization, before going into customer recovery strategies?
-
     - Question: 
         id: Scenario-06-Q1
         random: True
@@ -122,7 +161,13 @@
           credit: 1
           feedback:
             - text: A cost vs benefit estimate is the best way to prioritize customer retention. Customers that generate high recurrent revenues combined with low cost of support should have the priority of attention, particularly more if they have complaints about our service offering.
-
+    - columns:
+      - column is-10:
+        - text: 
+      - column is-2:
+        - button p-5 m-2 has-text-centered:
+          - text: Start again
+            action: first
 - page:
   - category: YeiraLab 
   - id: Scenario-07
@@ -158,7 +203,13 @@
           credit: 0
           feedback:
             - text: An increased use of a service at a premium price will not represent a cost, as long as the premium covers the additional effort to serve that client. However, an increase usage at a fix or nominal price can represent additional costs.
-
+    - columns:
+      - column is-10:
+        - text: 
+      - column is-2:
+        - button p-5 m-2 has-text-centered:
+          - text: Start again
+            action: first
 - page:
   - category: YeiraLab 
   - id: Scenario-08
@@ -194,4 +245,10 @@
           credit: 0
           feedback:
             - text: Incorrect, no customer satisfaction channel, including polls, should be used to open the discusion about discounts.
-
+    - columns:
+      - column is-10:
+        - text: 
+      - column is-2:
+        - button p-5 m-2 has-text-centered:
+          - text: Start again
+            action: first
