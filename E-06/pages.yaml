@@ -157,7 +157,7 @@
             - text: The cost to retain a customer is an incomplete way to prioritize customer complaints. because it misses what could be the actual benefit of retaining that customer.
         - value: Measure cost vs benefit altogether
           display:
-          - text: Measure cost vs benefit altogether.png
+          - text: Measure cost vs benefit altogether
           credit: 1
           feedback:
             - text: A cost vs benefit estimate is the best way to prioritize customer retention. Customers that generate high recurrent revenues combined with low cost of support should have the priority of attention, particularly more if they have complaints about our service offering.

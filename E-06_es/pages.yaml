@@ -1,0 +1,254 @@
+# Bloom Example
+
+# Buttons allow for many different actions, internally and externally
+- page:
+  - category: YeiraLab 
+  - id: Scenario-00
+  - title: Ejemplos de buttons y actions
+  - subtitle mt-5 mb-0: Botones de navegación normal
+  - button p-4 m-4:  
+    - text: Inicio
+      action: first
+  - button p-4 m-4:  
+    - text: Anterior
+      action: prev
+  - button p-4 m-4:  
+    - text: Siguiente
+      action: next
+  - button p-4 m-4:  
+    - text: Final
+      action: last
+  - subtitle mt-5 mb-0: Los botones pueden enlazar con ligas externas (URL)
+  - button p-4 m-4: 
+    - img: yeira-logo-blanco.png
+      action: https://yeira.training 
+    style: "background-color: #ef7145;"
+  - subtitle mt-5 mb-0: Finalmente, puedes saltar a una página específica mediante el ID de la página.
+  - button p-4 m-4:  
+    - text: Iniciar ejemplo de Escenario
+      action: Scenario-01
+
+
+- page:
+  - category: YeiraLab 
+  - id: Scenario-01
+  - content card p-5:
+    - title: Manejo de un cliente molesto
+    - subtitle: ¿Cuál es la estrategia que prefieres para tratar a un cliente inconforme?
+    - button m-2:
+      - text: A - Recuperación del cliente
+        action: Scenario-02
+    - button m-2:
+      - text: B - Priorización
+        action: Scenario-06
+
+- page:
+  - category: YeiraLab 
+  - id: Scenario-02
+  - content card p-5:
+    - title: Recuperación del cliente
+    - subtitle: El cliente quiere cancelar una suscripción a tus servicio en línea. ¿Cuál puede ser una buena estrategia de recuperación del cliente?
+    - button m-2:
+      - text: Ofrecer un descuento
+        action: Scenario-03
+    - button m-2:
+      - text: Enviar una encuesta para recabar información estadística
+        action: Scenario-04
+    - button m-2:
+      - text: Pedirle una llamada para entender su queja
+        action: Scenario-05
+
+- page:
+  - category: YeiraLab 
+  - id: Scenario-03
+  - content has-text-left card p-5:
+    - columns:
+      - column:
+        - text:
+          style: "min-height: 300px;"
+        img: discounts.jpg
+        position: right bottom
+      - column:
+        - title has-text-centered: Descuentos
+        - subtitle: Los descuentos y reembolsos son el último recurso en la recuperación de un cliente. En general los descuentos no deben orecerse si no existen internamente reglas para manejar el descuento de forma escalable ante otros clientes (no debe ser una excepción).
+        - subtitle: Nunca ofrezcas un descuento sin validar con el área técnica de e-commerce si esto es posible y está disponible. Las encuestas son una buena alternativa para iniciar una conversación con más detalle en el momento de recuperar un cliente.
+        - subtitle: ¿Quieres continuar y ver qué tipo de preguntas son mejores para una encuesta de satisfacción? ¿O prefieres hacer una revisión de los temas de análisis de costo beneficio en la gestión de reclamaciones?
+        - columns is-centered:
+          - column is-3: 
+            - button p-5 m-2 has-text-centered:
+              - text: Encuestas
+                action: Scenario-08
+          - column is-3: 
+            - button p-5 m-2 has-text-centered:
+              - text: Costo vs Beneficio
+                action: Scenario-07
+
+- page:
+  - category: YeiraLab 
+  - id: Scenario-04
+  - content has-text-left card p-5:
+    - columns:
+      - column:
+        - title has-text-centered: Encuestas
+        - subtitle: Enviar una encuesta puede ser un modo poco efectivo para tratar con quejas, sin embargo, es la mejor manera cuando se tiene un volumen elevado de reclamos y es necesario entender el impacto general en el negocio de forma cuantitativa.
+        - subtitle: ¿Quieres continuar y ver qué tipo de preguntas son mejores para una encuesta de satisfacción? ¿O prefieres hacer una revisión de los temas de análisis de costo beneficio en la gestión de reclamaciones?
+        - columns is-centered:
+          - column is-3: 
+            - button p-5 m-2 has-text-centered:
+              - text: Encuestas
+                action: Scenario-08
+          - column is-3: 
+            - button p-5 m-2 has-text-centered:
+              - text: Costo vs Beneficio
+                action: Scenario-07
+      - column:
+        - text:
+          style: "min-height: 300px;"
+        img: polls.jpg
+        position: right bottom
+
+- page:
+  - category: YeiraLab 
+  - id: Scenario-05
+  - content has-text-left card p-5:
+    - columns:
+      - column:
+        - text:
+          style: "min-height: 300px;"
+        img: call.jpg
+        position: right top
+      - column:
+        - title has-text-centered: Entrevistas
+        - subtitle: Si no recibes cientos de quejas en una semana sobre tu producto, puede ser mucho mejor buscar una entrevista o llamada telefónica con los clientes, para poder ponerse en sus zapatos. 
+        - subtitle: En muchas ocasiones, lo que parece un problema insuperable puede tener una solución muy sumple. Esa es la base de la recuperación de un cliente. Si hacer una llamada se dificulta, las encuestas pueden ofrecer una manera de comenzar la conversacion.
+        - subtitle: ¿Quieres continuar y ver qué tipo de preguntas son mejores para una encuesta de satisfacción? ¿O prefieres hacer una revisión de los temas de análisis de costo beneficio en la gestión de reclamaciones?
+        - columns is-centered:
+          - column is-3: 
+            - button p-5 m-2 has-text-centered:
+              - text: Encuestas
+                action: Scenario-08
+          - column is-3: 
+            - button p-5 m-2 has-text-centered:
+              - text: Costo vs Beneficio
+                action: Scenario-07
+
+- page:
+  - category: YeiraLab 
+  - id: Scenario-06
+  - content card p-5:
+    - title has-text-centered: Priorización
+    - subtitle: A veces es dificil atender todas las quejas de cada uno de los clientes. En ese caso, ¿cuál es el criterio para priorizar la atención, antes de iniciar una recuperación de cliente? 
+    - Question: 
+        id: Scenario-06-Q1
+        random: True
+        display: grid
+        options:
+        - value: Estimación de los ingresos futuros de dicho cliente
+          display:
+          - text: Estimación de los ingresos futuros de dicho cliente
+          credit: 0
+          feedback:
+            - text: Los ingresos provenientes de un cliente son una forma incompleta de priorizar las quejas de clientes, pues carecen de la perspectiva del costo de retención de dichos clientes, especialmente aquellos que recurren de forma muy frecuente a soporte.
+        - value: Estimar el costo total de retención de un cliente.
+          display:
+          - text: Estimar el costo total de retención de un cliente.
+          credit: 0
+          feedback:
+            - text: El costo de retener un cliente es una forma incompleta de priorizar las quejas de los clientes, puesto que no considera el beneficio real de retención de dichos clientes.
+        - value: Medición de costo vs beneficio
+          display:
+          - text: Medición de costo vs beneficio
+          credit: 1
+          feedback:
+            - text: Un análisis de costo vs beneficio es la mejor manera de priorizar la atención de clientes en el proceso de recuperación. Los clientes que generan un ingreso recurrente alto comparativamente con el costo que requiere su atención deben tener una prioridad alta, sobre todo cuando se presentan con quejas sobre nuestra oferta de valor o servicio. offering.
+    - columns:
+      - column is-10:
+        - text: 
+      - column is-2:
+        - button p-5 m-2 has-text-centered:
+          - text: Volver a iniciar
+            action: first
+- page:
+  - category: YeiraLab 
+  - id: Scenario-07
+  - content card p-5:
+    - title has-text-centered: Costo vs Beneficio
+    - subtitle: Indica cuales de los siguientes elementos pueden clasificarse como costo para retener un cliente.
+    - Question: 
+        id: Scenario-07-Q1
+        random: True
+        display: grid
+        options:
+        - value: Volumen de tickets de servicio que el cliente genera.
+          display:
+          - text: Volumen de tickets de servicio que el cliente genera.
+          credit: 1
+          feedback:
+            - text: Entre más tickets de soporte o servicio genera un cliente, el costo aumenta y posiblemente es un indicador de que puede existir una disparidad entre sus necesidares y la oferta de valor. Un cliente que no entiende la oferta de servicio o no le encuentra valor suele buscar formas de compensarse mediante la atención.
+        - value: Cualquier descuento ofrecido para retener al cliente.
+          display:
+          - text: Cualquier descuento ofrecido para retener al cliente.
+          credit: 1
+          feedback:
+            - text: Los descuentos deben considerarse como costos de oportunidad, el porcentaje de descuento multiplicado por el precio convencional del servicio representa el costo de retención de un cliente. 
+        - value: Uso reducido de características del servicio
+          display:
+          - text: Uso reducido de características del servicio
+          credit: 0
+          feedback:
+            - text: Un uso reducido de nuestra oferta de valor no representa un costo 
+        - value: Aumento en el uso de un servicio bajo un precio premium
+          display:
+          - text: Aumento en el uso de un servicio bajo un precio premium
+          credit: 0
+          feedback:
+            - text: Un uso incrementado de nuestro servicio bajo una oferta premium de precio no representa un custo, mientras el precio premium cubra el esfuerzo adicional de atender a dicho cliente. SIn embargo, un uso excesivo a un precio fijo o nominal puede interpretarse como un costo adicional.
+    - columns:
+      - column is-10:
+        - text: 
+      - column is-2:
+        - button p-5 m-2 has-text-centered:
+          - text: Volver a iniciar
+            action: first
+- page:
+  - category: YeiraLab 
+  - id: Scenario-08
+  - content card p-5:
+    - title has-text-centered: Preguntas de encuesta para satisfacción de clientes.
+    - subtitle: Selecciona cual de las siguientes es una buena pregunta para una encuesta de satisfacción.
+    - Question: 
+        id: Scenario-08-Q1
+        random: True
+        display: grid
+        options:
+        - value: ¿Recomendaría nuestros servicios basado en su experiencia de servicio?
+          display:
+          - text: ¿Recomendaría nuestros servicios basado en su experiencia de servicio?
+          credit: 1
+          feedback:
+            - text: Correcto, es una pregunta común en una encuesta de satisfacción.
+        - value: Hay alguna característica que crees que podría mejorar nuestro servicio?
+          display:
+          - text: Hay alguna característica que crees que podría mejorar nuestro servicio?
+          credit: 1
+          feedback:
+            - text: Correcto, una encuesta es siempre un buen punto de partida para conocer necesidades no cubiertas de nuestros clientes.
+        - value: Qué otras alternativas o sustitutos de nuestro servicio has considerado?
+          display:
+          - text: Qué otras alternativas o sustitutos de nuestro servicio has considerado?
+          credit: 0
+          feedback:
+            - text: Incorrecto, las encuestas de satifacción no son la mejor manera de indagar información de mercado como la que proviene de estudios de mercado, pues un cliente actual quizás no se sienta muy seguro de compartir otras alternativas que esté considerando.
+        - value: Aceptarías un descuento en caso de que nuestro servicio no cumpla con tus expectativas?
+          display:
+          - text: Aceptarías un descuento en caso de que nuestro servicio no cumpla con tus expectativas?
+          credit: 0
+          feedback:
+            - text: Incorrecto, ningín canal de medición de satisfacción de clientes debe comunicar aspectos comerciales como descuentos, es mejor manejar esta información desde los canales de venta o promoción.
+    - columns:
+      - column is-10:
+        - text: 
+      - column is-2:
+        - button p-5 m-2 has-text-centered:
+          - text: Volver a iniciar
+            action: first
