@@ -5,30 +5,29 @@
   - category: YeiraLab 
   - id: Scenario-00
   - title: Ejemplos de buttons y actions
-  - subtitle mt-5 mb-0: Botones de navegación normal
-  - button p-4 m-4:  
+  - subtitle: Botones de navegación normal
+  - button p-4 m-4:
     - text: Inicio
       action: first
-  - button p-4 m-4:  
+  - button p-4 m-4:
     - text: Anterior
       action: prev
-  - button p-4 m-4:  
+  - button p-4 m-4:
     - text: Siguiente
       action: next
-  - button p-4 m-4:  
+  - button p-4 m-4:
     - text: Final
       action: last
-  - subtitle mt-5 mb-0: Los botones pueden enlazar con ligas externas (URL)
-  - button p-4 m-4: 
+  - subtitle: Vínculos externos
+  - button p-4 m-4:
     - img: yeira-logo-blanco.png
-      action: https://yeira.training 
+      action: https://yeira.training
     style: "background-color: #ef7145;"
-  - subtitle mt-5 mb-0: Finalmente, puedes saltar a una página específica mediante el ID de la página.
-  - button p-4 m-4:  
-    - text: Iniciar ejemplo de Escenario
+  - subtitle: Ligas internas
+  - button p-4 m-4:
+    - text: Ir a Escenario
       action: Scenario-01
-
-
+  
 - page:
   - category: YeiraLab 
   - id: Scenario-01
@@ -167,7 +166,7 @@
       - column is-2:
         - button p-5 m-2 has-text-centered:
           - text: Volver a iniciar
-            action: first
+            action: Scenario-01
 - page:
   - category: YeiraLab 
   - id: Scenario-07
@@ -209,7 +208,7 @@
       - column is-2:
         - button p-5 m-2 has-text-centered:
           - text: Volver a iniciar
-            action: first
+            action: Scenario-01
 - page:
   - category: YeiraLab 
   - id: Scenario-08
@@ -251,4 +250,4 @@
       - column is-2:
         - button p-5 m-2 has-text-centered:
           - text: Volver a iniciar
-            action: first
+            action: Scenario-01
