@@ -1,0 +1,253 @@
+# Bloom Example
+
+# Buttons allow for many different actions, internally and externally
+- page:
+  - category: YeiraLab 
+  - id: Questions-00
+
+# True False
+
+  - block:
+    - card m-5 p-5:
+      - text: Is this a true false question?
+      - Question: 
+          id: YeiraLab-Q1
+          points: 10
+          display: grid # can use any display css value, grid, block, or just drop this attribute
+          options: 
+          - value: True
+            display: 'True'
+            credit: 1
+            feedback: 
+            - text: Yes, it is true
+          - value: False
+            display: 'False'
+            credit: 0
+            feedback: 
+            - text: Incorrect, this is indeed a true false question.
+
+# Single Option
+
+  - block:
+    - card m-5 p-5:
+      - text: Which questionnaire tool includes Frontend Learning Analytics off the shelf?
+      - Question: 
+          id: YeiraLab-Q2
+          points: 10
+          display: grid # can use any display css value, grid, block, or just drop this attribute
+          random: True
+          options: 
+          - value: 'Bloom'
+            display: 'Bloom'
+            credit: 1
+            feedback: 
+            - text: Yes, it is true
+          - value: Rise 360
+            display: 'Rise 360'
+            credit: 0
+            feedback: 
+            - text: No, Rise 360 barely has interactions, hardly any data collection!
+          - value: 'Adobe Flash'
+            display: 'Adobe Flash'
+            credit: 0
+            feedback: 
+            - text: Flash... hahaha, good one!
+
+# Multiple Option
+
+  - block:
+    - card m-5 p-5:
+      - text: Let's try again, but this time, which platforms are out of the question for analytics?
+      - Question: 
+          id: YeiraLab-Q3
+          points: 10
+          random: True
+          options: 
+          - value: 'Bloom'
+            display: 'Bloom'
+            credit: 0
+            feedback: 
+            - text: Not precisely, Bloom can provide your question and quiz level analytics!
+          - value: Rise 360
+            display: 'Rise 360'
+            credit: 1
+            feedback: 
+            - text: Rise 360 is an interactive / no data solution.
+          - value: 'Adobe Flash'
+            display: 'Adobe Flash'
+            credit: 1
+            feedback: 
+            - text: Did you notice the options where placed horizontally this time?
+
+# Image options and Video Feedback
+
+  - block:
+    - card m-5 p-5:
+      - text: This example shows additional media and feedback components...
+      - text: Which one of these items is used for gardening?
+      - Question:  
+          id: YeiraLab-Q4
+          random: True
+          options: 
+          - value: Multitool
+            display: 
+            - img: Multitool.png
+            credit: 0
+            feedback: 
+              - text: <b>No,</b> this is a multi-purpose tool. Lets see some more!
+              - columns is-centered:
+                - column is-4 mt-4:
+                  - video: https://www.youtube.com/embed/Cxou6yLfTaI
+          - value: Saw
+            display: 
+            - img: Saw.png
+            credit: 0.5
+            feedback: 
+              - text: <b>Mmm, </b> are you cutting down trees in your garden. Will give you half credit. Let's see how you would do that!
+              - columns is-centered:
+                - column is-4 mt-4:
+                  - video: https://www.youtube.com/embed/RtfZ__Q5EzI
+          - value: Shovel
+            display: 
+            - img: Shovel.png
+            credit: 1
+            feedback: 
+              - text: <b>Yes.</b> A shovel is typically used in the garden. Would you like to see more?
+              - columns is-centered:
+                - column is-4 mt-4:
+                  - video: https://www.youtube.com/embed/NmMN339AbUY
+
+# Matrix Question
+  - block:
+    - card m-5 p-5:
+      - title is-size-6: "Please classify the following inventions depending on the period of history to which they belong."
+      - Matrix:
+          id: YeiraLab-Q5
+          points: 10
+          random: true
+          feedback:
+            display:
+              - text: "Matrix with <b>feedback"
+          ratio: is-3
+          options:
+            - value: Telegraph
+              display:
+              - text: Telegraph
+                style: "text-align: right;"
+              correct: 3
+            - value: Steam machine
+              display:
+              - text: Steam machine
+                style: "text-align: right;"
+              correct: 1
+            - value: Telescope
+              display:
+              - text: Telescope
+                style: "text-align: right;"
+              correct: 0
+            - value: Mobile Phones
+              display:
+              - text: Mobile Phones
+                style: "text-align: right;"
+              correct: 2
+          values:
+            - value: 0
+              display: 
+                - text: Early Modern
+            - value: 1
+              display: 
+                - text: Industrial Revolution
+            - value: 2
+              display: 
+                - text: Computer Revolution
+            - value: 3
+              display: 
+                - text: Modern Era
+      style: "padding: 20px; margin-bottom:30px;"
+
+# No Feedback
+
+  - block:
+    - card m-5 p-5:
+      - text: Now this is the real deal, with no feedback. Ready? 
+      - text: Best FLA platform for quizzes?
+      - Question: 
+          id: YeiraLab-Q6
+          points: 10
+          display: grid # can use any display css value, grid, block, or just drop this attribute
+          random: True
+          options: 
+          - value: 'Bloom'
+            display: 'Bloom'
+            credit: 1
+          - value: Rise 360
+            display: 'Rise 360'
+            credit: 0
+          - value: 'Adobe Flash'
+            display: 'Adobe Flash'
+            credit: 0
+
+# CycleThrough
+
+  - block:
+    - card m-5 p-5:
+      - subtitle: The great jedi master Yoda would typically say...
+      - CycleThrough:
+          id: YeiraLab-Q7
+          description: The great jedi master Yoda would typically say...
+          template: '<class="title">"{} is the path to the {} side. Fear leads to anger. Anger leads to hate. Hate leads to {}."'
+          random: true
+          points: 10
+          options:
+          - display:
+            - text: Fear # first option is correct
+            - text: Hitchhiking
+            feedback:
+              right:
+                - text: That is correct, path to the dark side fear is!
+              wrong:
+                - text: That is wrong, path to the dark side fear is!
+          - display:
+            - text: dark # La primera opción es la correcta
+            - text: wild
+            feedback:
+              right:
+                - text: Correct, it is the dark side we away from must stay!
+              wrong:
+                - text: No, that is wrong, it is the dark side we away from must stay!
+          - display:
+            - text: suffering
+            - text: lollipops
+            feedback:
+              right:
+                - text: Yes, hate to suffering leads.
+              wrong:
+                - text: No, hate to suffering leads.
+
+# Sorting Activity
+
+  - block:
+    - Sort:
+        id: YeiraLab-Q8
+        description: Sort type of question
+        random: true
+        points: 10
+        options:
+          - block:
+            - card m-5 p-5:
+              - title: Slide 1
+          - block:
+            - card m-5 p-5:
+              - title: Slide 2
+          - block:
+            - card m-5 p-5:
+              - title: Slide 3
+        feedback: El orden correcto es S1, S2 y S3
+
+
+# Overall Results:
+
+  - container:
+    - card is-shadowless has-background-light pt-5: 
+      - Results:
+      style: "margin-bottom: 30px;"
