@@ -8,7 +8,7 @@
 # True False
   - block:
     - card m-5 p-5:
-      - title: True / False
+      - title: Cierto / Falso
       - text: Is this a true false question?
       - Question: 
           id: YeiraLab-Q1
@@ -16,17 +16,21 @@
           display: grid # can use any display css value, grid, block, or just drop this attribute
           options: 
           - value: True
-            display: 'True'
+            display: 'Cierto'
             credit: 1
             feedback: 
             - text: Yes, it is true
           - value: False
-            display: 'False'
+            display: 'Falso'
             credit: 0
             feedback: 
             - text: Incorrect, this is indeed a true false question.
 
+
 # Single Option
+- page:
+  - category: YeiraLab 
+  - id: Questions-01
   - block:
     - card m-5 p-5:
       - title: Single Option
@@ -54,6 +58,9 @@
             - text: Flash... hahaha, good one!
 
 # Multiple Option
+- page:
+  - category: YeiraLab 
+  - id: Questions-02
   - block:
     - card m-5 p-5:
       - title: Multiple Option
@@ -63,8 +70,8 @@
           points: 10
           random: True
           options: 
-          - value: 'Bloom'
-            display: 'Bloom'
+          - value: 'Yeira Toolkit'
+            display: 'Yeira Toolkit'
             credit: 0
             feedback: 
             - text: Not precisely, Bloom can provide your question and quiz level analytics!
@@ -80,6 +87,9 @@
             - text: Did you notice the options where placed horizontally this time?
 
 # Image options and Video Feedback
+- page:
+  - category: YeiraLab 
+  - id: Questions-03
   - block:
     - card m-5 p-5:
       - title: Multiple Option (Multimedia)
@@ -119,6 +129,9 @@
                   - video: https://www.youtube.com/embed/NmMN339AbUY
 
 # Matrix Question
+- page:
+  - category: YeiraLab 
+  - id: Questions-04
   - block:
     - card m-5 p-5:
       - title: Matrix Selection
@@ -168,6 +181,9 @@
       style: "padding: 20px; margin-bottom:30px;"
 
 # No Feedback
+- page:
+  - category: YeiraLab 
+  - id: Questions-05
   - block:
     - card m-5 p-5:
       - title: Single Option (Summative Evaluation)
@@ -190,6 +206,9 @@
             credit: 0
 
 # CycleThrough
+- page:
+  - category: YeiraLab 
+  - id: Questions-06
   - block:
     - card m-5 p-5:
       - title: Complete Phrase (Cycle options)
@@ -227,6 +246,9 @@
                 - text: No, hate to suffering leads.
 
 # CycleThrough - Fill in the blanks
+- page:
+  - category: YeiraLab 
+  - id: Questions-07
   - block:
     - card m-5 p-5:
       - title: Complete Phrase (Fill in blanks)
@@ -248,6 +270,9 @@
 
 # Sorting Activity
 
+- page:
+  - category: YeiraLab 
+  - id: Questions-08
   - block:
     - card m-5 p-5:
       - title: Sort options
@@ -278,7 +303,9 @@
               feedback: 'The correct order is: Frogs, Birds and Monkeys'
 
 # Overall Results:
-
+- page:
+  - category: Report 
+  - id: Questions-09
   - container:
     - card is-shadowless has-background-light pt-5: 
       - title: Report

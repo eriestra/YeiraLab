@@ -4,9 +4,10 @@ description: This is the main Bloom Toolkit
 id: Bloom-Toolkit-E03_es
 highlight: '#EF7145'
 defaults:
+  locale: es
   pagination: true
   swipe: false
-  next: "Next"
+  next: "Siguiente"
   canReview: true
 
 

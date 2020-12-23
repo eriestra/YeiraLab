@@ -4,6 +4,7 @@ description: This is the main Bloom Toolkit
 id: Bloom-Toolkit-E02
 highlight: '#EF7145'
 defaults:
+  locale: en
   pagination: true
   swipe: false
   next: "Next"

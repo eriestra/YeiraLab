@@ -4,5 +4,6 @@ description: This is the main Bloom Toolkit
 id: Bloom-Toolkit-E05_es
 highlight: '#EF7145'
 defaults:
+  locale: es
   prev: "Regresar"
   next: "Continuar"
