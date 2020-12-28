@@ -1,0 +1,15 @@
+---
+title: Bloom Toolkit
+description: This is the main Bloom Toolkit
+id: Bloom-Toolkit-E07
+highlight: '#EF7145'
+
+defaults:
+  locale: en
+  navigation: false
+  prev: "Back"
+  next: "Next"
+  pointScale: 10
+  passingGrade: 6
+
+

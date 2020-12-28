@@ -1,0 +1,69 @@
+# Bloom Example
+
+# Buttons allow for many different actions, internally and externally
+- page:
+  - category: YeiraLab 
+  - id: Questions-00
+
+# Personal Notes
+  - block:
+    - card m-5 p-5:
+      - title: Personal Notes
+      - Note:
+          id: NOTE-ID-01
+          description: This is my note
+
+# Social Reactions
+  - block:
+    - card m-5 p-5:
+      - title: Social Reactions
+      - Social:
+          id: SOCIAL-ID-01
+
+# Rate 
+  - block:
+    - card m-5 p-5:
+      - title: Provide you rating
+      - Rating:
+          id: RATING-ID-01
+
+# Poll
+  - block:
+    - card m-5 p-5:
+      - title: Poll
+      - subtitle: You are amazed at what Yeira Toolkit can do    
+      - Poll:
+          id: Poll-01
+          options:
+            - Totally agree
+            - Partially agree
+            - Slightly agree
+            - Do not agree
+
+# Comments
+  - block:
+    - card m-5 p-5:
+      - title: Comments
+      - Chat:
+          id: COMMENTS-ID-01
+          order: top
+          description: Please leave here your comment
+
+# Chat
+  - block:
+    - card m-5 p-5:
+      - title: Chat
+      - Chat:
+          id: CHAT-ID-01
+          description: Share with everyone your opinion!
+
+# Notifications
+  - block:
+    - card m-5 p-5:
+      - title: Notifications
+      - Chat:
+          id: NOTIFICATION-ID-01
+          allow: admin
+          description: Please check our latest notifications
+
+  - Realtime: 
