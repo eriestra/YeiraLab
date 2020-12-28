@@ -6,27 +6,27 @@
   - id: Scenario-00
   - title: Ejemplos de buttons y actions
   - subtitle: Botones de navegación normal
-  - button p-4 m-4:
+  - Button p-4 m-4:
     - text: Inicio
-      action: first
-  - button p-4 m-4:
+    action: first
+  - Button p-4 m-4:
     - text: Anterior
-      action: prev
-  - button p-4 m-4:
+    action: prev
+  - Button p-4 m-4:
     - text: Siguiente
-      action: next
-  - button p-4 m-4:
+    action: next
+  - Button p-4 m-4:
     - text: Final
-      action: last
+    action: last
   - subtitle: Vínculos externos
-  - button p-4 m-4:
+  - Button p-4 m-4:
     - img: yeira-logo-blanco.png
-      action: https://yeira.training
+    action: https://yeira.training
     style: "background-color: #ef7145;"
   - subtitle: Ligas internas
-  - button p-4 m-4:
+  - Button p-4 m-4:
     - text: Ir a Escenario
-      action: Scenario-01
+    action: Scenario-01
   
 - page:
   - category: YeiraLab 
@@ -34,12 +34,12 @@
   - content card p-5:
     - title: Manejo de un cliente molesto
     - subtitle: ¿Cuál es la estrategia que prefieres para tratar a un cliente inconforme?
-    - button m-2:
+    - Button m-2:
       - text: A - Recuperación del cliente
-        action: Scenario-02
-    - button m-2:
+      action: Scenario-02
+    - Button m-2:
       - text: B - Priorización
-        action: Scenario-06
+      action: Scenario-06
 
 - page:
   - category: YeiraLab 
@@ -47,15 +47,15 @@
   - content card p-5:
     - title: Recuperación del cliente
     - subtitle: El cliente quiere cancelar una suscripción a tus servicio en línea. ¿Cuál puede ser una buena estrategia de recuperación del cliente?
-    - button m-2:
+    - Button m-2:
       - text: Ofrecer un descuento
-        action: Scenario-03
-    - button m-2:
+      action: Scenario-03
+    - Button m-2:
       - text: Enviar una encuesta para recabar información estadística
-        action: Scenario-04
-    - button m-2:
+      action: Scenario-04
+    - Button m-2:
       - text: Pedirle una llamada para entender su queja
-        action: Scenario-05
+      action: Scenario-05
 
 - page:
   - category: YeiraLab 
@@ -74,13 +74,13 @@
         - subtitle: ¿Quieres continuar y ver qué tipo de preguntas son mejores para una encuesta de satisfacción? ¿O prefieres hacer una revisión de los temas de análisis de costo beneficio en la gestión de reclamaciones?
         - columns is-centered:
           - column is-3: 
-            - button p-5 m-2 has-text-centered:
+            - Button p-5 m-2 has-text-centered:
               - text: Encuestas
-                action: Scenario-08
+              action: Scenario-08
           - column is-3: 
-            - button p-5 m-2 has-text-centered:
+            - Button p-5 m-2 has-text-centered:
               - text: Costo vs Beneficio
-                action: Scenario-07
+              action: Scenario-07
 
 - page:
   - category: YeiraLab 
@@ -93,13 +93,13 @@
         - subtitle: ¿Quieres continuar y ver qué tipo de preguntas son mejores para una encuesta de satisfacción? ¿O prefieres hacer una revisión de los temas de análisis de costo beneficio en la gestión de reclamaciones?
         - columns is-centered:
           - column is-3: 
-            - button p-5 m-2 has-text-centered:
+            - Button p-5 m-2 has-text-centered:
               - text: Encuestas
-                action: Scenario-08
+              action: Scenario-08
           - column is-3: 
-            - button p-5 m-2 has-text-centered:
+            - Button p-5 m-2 has-text-centered:
               - text: Costo vs Beneficio
-                action: Scenario-07
+              action: Scenario-07
       - column:
         - text:
           style: "min-height: 300px;"
@@ -123,13 +123,13 @@
         - subtitle: ¿Quieres continuar y ver qué tipo de preguntas son mejores para una encuesta de satisfacción? ¿O prefieres hacer una revisión de los temas de análisis de costo beneficio en la gestión de reclamaciones?
         - columns is-centered:
           - column is-3: 
-            - button p-5 m-2 has-text-centered:
+            - Button p-5 m-2 has-text-centered:
               - text: Encuestas
-                action: Scenario-08
+              action: Scenario-08
           - column is-3: 
-            - button p-5 m-2 has-text-centered:
+            - Button p-5 m-2 has-text-centered:
               - text: Costo vs Beneficio
-                action: Scenario-07
+              action: Scenario-07
 
 - page:
   - category: YeiraLab 
@@ -164,9 +164,9 @@
       - column is-10:
         - text: 
       - column is-2:
-        - button p-5 m-2 has-text-centered:
+        - Button p-5 m-2 has-text-centered:
           - text: Volver a iniciar
-            action: Scenario-01
+          action: Scenario-01
 - page:
   - category: YeiraLab 
   - id: Scenario-07
@@ -206,9 +206,9 @@
       - column is-10:
         - text: 
       - column is-2:
-        - button p-5 m-2 has-text-centered:
+        - Button p-5 m-2 has-text-centered:
           - text: Volver a iniciar
-            action: Scenario-01
+          action: Scenario-01
 - page:
   - category: YeiraLab 
   - id: Scenario-08
@@ -248,6 +248,6 @@
       - column is-10:
         - text: 
       - column is-2:
-        - button p-5 m-2 has-text-centered:
+        - Button p-5 m-2 has-text-centered:
           - text: Volver a iniciar
-            action: Scenario-01
+          action: Scenario-01

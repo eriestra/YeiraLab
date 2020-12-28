@@ -6,27 +6,27 @@
   - id: Scenario-00
   - title: Examples of Buttons and actions
   - subtitle mt-5 mb-0: These are normal navigation buttons
-  - button p-4 m-4:  
+  - Button p-4 m-4:  
     - text: First page
-      action: first
-  - button p-4 m-4:  
+    action: first
+  - Button p-4 m-4:  
     - text: Previous page
-      action: prev
-  - button p-4 m-4:  
+    action: prev
+  - Button p-4 m-4:  
     - text: Next page
-      action: next
-  - button p-4 m-4:  
+    action: next
+  - Button p-4 m-4:  
     - text: Last page
-      action: last
+    action: last
   - subtitle mt-5 mb-0: You can also link buttons or any other element to external links
-  - button p-4 m-4: 
+  - Button p-4 m-4: 
     - img: yeira-logo-blanco.png
-      action: https://yeira.training 
+    action: https://yeira.training 
     style: "background-color: #ef7145;"
   - subtitle mt-5 mb-0: Finally you can also jump to a specific page by providing the ID of that page.
-  - button p-4 m-4:  
+  - Button p-4 m-4:  
     - text: Start with Scenario example
-      action: Scenario-01
+    action: Scenario-01
 
 
 - page:
@@ -35,12 +35,12 @@
   - content card p-5:
     - title: Dealing with an Angry Customer
     - subtitle: When dealing with an angry customer, what is your preferred strategy?
-    - button m-2:
+    - Button m-2:
       - text: A - Customer Recovery
-        action: Scenario-02
-    - button m-2:
+      action: Scenario-02
+    - Button m-2:
       - text: B - Prioritization
-        action: Scenario-06
+      action: Scenario-06
 
 - page:
   - category: YeiraLab 
@@ -48,15 +48,15 @@
   - content card p-5:
     - title: Customer Recovery
     - subtitle: The customer wants to cancel a subscription to your online services. What could be a good strategy for customer recovery?
-    - button m-2:
+    - Button m-2:
       - text: Offer him a discount
-        action: Scenario-03
-    - button m-2:
+      action: Scenario-03
+    - Button m-2:
       - text: Send a poll to collect statistical information
-        action: Scenario-04
-    - button m-2:
+      action: Scenario-04
+    - Button m-2:
       - text: Ask for a call to understand his/her complaint
-        action: Scenario-05
+      action: Scenario-05
 
 - page:
   - category: YeiraLab 
@@ -75,13 +75,13 @@
         - subtitle: 'Ready to test your knowledge? Try one of these options:'
         - columns is-centered:
           - column is-3: 
-            - button p-5 m-2 has-text-centered:
+            - Button p-5 m-2 has-text-centered:
               - text: Poll questions
-                action: Scenario-08
+              action: Scenario-08
           - column is-3: 
-            - button p-5 m-2 has-text-centered:
+            - Button p-5 m-2 has-text-centered:
               - text: Cost vs Benefit
-                action: Scenario-07
+              action: Scenario-07
 
 - page:
   - category: YeiraLab 
@@ -94,13 +94,13 @@
         - subtitle: Do you want to go ahead and see what kind of poll questions could be best? 
         - columns is-centered:
           - column is-3: 
-            - button p-5 m-2 has-text-centered:
+            - Button p-5 m-2 has-text-centered:
               - text: Poll questions
-                action: Scenario-08
+              action: Scenario-08
           - column is-3: 
-            - button p-5 m-2 has-text-centered:
+            - Button p-5 m-2 has-text-centered:
               - text: Cost vs Benefit
-                action: Scenario-07
+              action: Scenario-07
       - column:
         - text:
           style: "min-height: 300px;"
@@ -124,13 +124,13 @@
         - subtitle: Do you want to go ahead and see what kind of poll questions could be best? 
         - columns is-centered:
           - column is-3: 
-            - button p-5 m-2 has-text-centered:
+            - Button p-5 m-2 has-text-centered:
               - text: Poll questions
-                action: Scenario-08
+              action: Scenario-08
           - column is-3: 
-            - button p-5 m-2 has-text-centered:
+            - Button p-5 m-2 has-text-centered:
               - text: Cost vs Benefit
-                action: Scenario-07
+              action: Scenario-07
 
 - page:
   - category: YeiraLab 
@@ -165,9 +165,9 @@
       - column is-10:
         - text: 
       - column is-2:
-        - button p-5 m-2 has-text-centered:
+        - Button p-5 m-2 has-text-centered:
           - text: Start again
-            action: first
+          action: first
 - page:
   - category: YeiraLab 
   - id: Scenario-07
@@ -207,9 +207,9 @@
       - column is-10:
         - text: 
       - column is-2:
-        - button p-5 m-2 has-text-centered:
+        - Button p-5 m-2 has-text-centered:
           - text: Start again
-            action: first
+          action: first
 - page:
   - category: YeiraLab 
   - id: Scenario-08
@@ -249,6 +249,6 @@
       - column is-10:
         - text: 
       - column is-2:
-        - button p-5 m-2 has-text-centered:
+        - Button p-5 m-2 has-text-centered:
           - text: Start again
-            action: first
+          action: first
